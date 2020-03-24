@@ -2,6 +2,12 @@ import connectDatabase from '../../database';
 import crypto from 'crypto';
 
 class OngController {
+  async index(req, res) {
+    const ongs = await connectDatabase('ongs').select('*');
+
+    return res.json(ongs);
+  }
+
   async store(req, res) {
     const { name, email, whatsapp, city, uf } = req.body;
 
