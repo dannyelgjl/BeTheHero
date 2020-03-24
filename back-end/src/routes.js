@@ -9,5 +9,6 @@ routes.get('/ongs', OngController.index);
 routes.post('/ongs', OngController.store);
 
 routes.post('/incidents', IncidentsController.store);
+routes.get('/incidents', IncidentsController.index);
 
 export default routes;
