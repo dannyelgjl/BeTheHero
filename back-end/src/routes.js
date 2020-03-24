@@ -10,5 +10,6 @@ routes.post('/ongs', OngController.store);
 
 routes.post('/incidents', IncidentsController.store);
 routes.get('/incidents', IncidentsController.index);
+routes.delete('/incidents/:id', IncidentsController.delete);
 
 export default routes;
