@@ -12,11 +12,13 @@ export default function Login() {
       <section className="form">
         <img src={logoImg} alt="Be The Hero" />
 
-        <form action="">
+        <form>
           <h1>Faça seu Login</h1>
 
           <input placeholder="Sua ID" />
-          <button type="submit">Entrar</button>
+          <button className="button" type="submit">
+            Entrar
+          </button>
 
           <a href="/register">
             <FiLogIn size="16" color="#E02041" />
